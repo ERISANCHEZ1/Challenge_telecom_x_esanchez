@@ -17,7 +17,7 @@ El notebook incluye: limpieza de datos, transformación, análisis exploratorio,
 
 ---
 
-## 📁 Dataset
+## Dataset
 - Formato: JSON  
 - Fuente: [TelecomX_Data.json](https://github.com/ingridcristh/challenge2-data-science-LATAM/blob/main/TelecomX_Data.json)  
 - Filas: 7,267 clientes  
@@ -29,10 +29,36 @@ El notebook incluye: limpieza de datos, transformación, análisis exploratorio,
 
 ---
 
-## 🛠 Requisitos
+## Requisitos
 - Python 3.8+  
 - Librerías: `pandas`, `numpy`, `matplotlib`, `seaborn`, `requests`  
 
 Instalación recomendada:
 ```bash
 pip install pandas numpy matplotlib seaborn requests
+
+**## Análisis Realizado**
+
+**Limpieza y Transformación:**
+
+Normalización de datos anidados
+Conversión de tipos, manejo de valores faltantes
+Creación de DailyCharges y NumServicios
+Transformación de variables categóricas
+
+**Exploración de Datos (EDA):**
+
+Distribución de Churn (gráficos de barras y pie chart)
+Churn según variables categóricas y numéricas
+Boxplots de Tenure, MonthlyCharges, TotalCharges, DailyCharges
+
+**Correlaciones y Patrones:**
+
+Matriz de correlación entre variables numéricas y Churn
+Scatterplots y análisis del número de servicios contratados
+
+**Insights Clave:**
+
+Mayor churn en contratos mensuales y clientes con menor tenure
+Clientes con menos servicios presentan mayor riesgo de evasión
+Algunos métodos de pago y consumo diario elevado afectan la cancelación
